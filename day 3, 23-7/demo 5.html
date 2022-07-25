@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+ 
+            function sum()
+            {
+                var a = parseFloat(prompt("Enter first number"));
+                var b = parseFloat(prompt("Enter Second number"));
+                var c = a+b;
+               document.write("<h1 id = 'col'>"+c+"<h1>");
+                document.getElementById("col").style.color="red";
+                
+
+            }
+            function sub()
+            {
+                var a = parseFloat(prompt("Enter first number"));
+                var b = parseFloat(prompt("Enter Second number"));
+                var c = a-b;
+                document.write("<h1 id = 'col'>"+c+"<h1>");
+                document.getElementById("col").style.color="red";
+               
+            }
+            function mul()
+            {
+                var a = parseFloat(prompt("Enter first number"));
+                var b = parseFloat(prompt("Enter Second number"));
+                var c = a*b;
+                document.write("<h1 id = 'col'>"+c+"<h1>");
+                document.getElementById("col").style.color="red";
+               
+            }
+            function div()
+            {
+                var a = parseFloat(prompt("Enter first number"));
+                var b = parseFloat(prompt("Enter Second number"));
+                var c = a/b;
+                document.write("<h1 id = 'col'>"+c+"<h1>");
+                document.getElementById("col").style.color="red";
+               
+            }
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="submit" value="addition" onclick="sum();"><hr>
+            
+            <input type="submit" value="subtraction" onclick="sub();"><hr>
+            <input type="submit" value="multiplication" onclick="mul();"><hr>
+            <input type="submit" value="division" onclick="div();">
+        </form>
+    </body>
+</html>
